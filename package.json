@@ -1,0 +1,14 @@
+{
+  "name": "2023-tutorial-zero-to-hero-playwright",
+  "version": "1.0.0",
+  "description": "From Zero to Hero: Playwright Web Automation",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.38.1",
+    "@types/node": "^20.7.1"
+  }
+}
