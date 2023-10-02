@@ -1,18 +1,19 @@
-import { test, expect } from '@playwright/test';
+import { test } from "@playwright/test";
 
-test('has title', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
+test.describe("Authentication", () => {
+  test("As a user, I can login with valid credentials", async ({ page }) => {
+    await test.step("Go to login page", async () => {});
+    await test.step("Enter email", async () => {});
+    await test.step("Enter password", async () => {});
+    await test.step("Click Sign-in button", async () => {});
+  });
 
-  // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle(/Playwright/);
-});
-
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
-
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
-
-  // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+  test("As a user, I cannot login with invalid credentials", async ({
+    page,
+  }) => {
+    await test.step("Go to login page", async () => {});
+    await test.step("Enter email", async () => {});
+    await test.step("Enter password", async () => {});
+    await test.step("Click Sign-in button", async () => {});
+  });
 });
